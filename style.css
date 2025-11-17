@@ -18,15 +18,22 @@ h1 {
     border-bottom: 5px solid #0056b3; /* Darker blue line */
 }
 
-/* Content Area */
-p, h2, form {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
+/* Content Area Wrapper */
+.container {
+    width: 90%; /* Use 90% of the screen width */
+    max-width: 1000px; /* Don't get too wide on large screens */
+    margin: 0 auto; /* Center the container on the page */
+    padding: 20px;
+}
+
+/* Content Area: Apply box styling to the elements inside the container */
+p, h2, form, ul {
+    margin: 20px 0; /* Add vertical space */
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-position: inside; /* Keeps bullets inside the white box */
 }
 
 /* Form Styling */
