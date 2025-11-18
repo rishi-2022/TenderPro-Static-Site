@@ -1,66 +1,10 @@
-/* Basic Reset and Fonts */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f7f6; /* Light gray background */
-    color: #333;
-}
-
-/* Header and Branding */
-h1 {
-    background-color: #007bff; /* Professional blue */
-    color: white;
-    padding: 20px;
-    margin-top: 0;
+/* Footer Styling */
+.site-footer {
+    background-color: #333; /* Dark background */
+    color: #f4f7f6; /* Light text */
     text-align: center;
-    border-bottom: 5px solid #0056b3; /* Darker blue line */
-}
-
-/* Content Area Wrapper */
-.container {
-    width: 90%; /* Use 90% of the screen width */
-    max-width: 1000px; /* Don't get too wide on large screens */
-    margin: 0 auto; /* Center the container on the page */
-    padding: 20px;
-}
-
-/* Content Area: Apply box styling to the elements inside the container */
-p, h2, form, ul {
-    margin: 20px 0; /* Add vertical space */
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    list-style-position: inside; /* Keeps bullets inside the white box */
-}
-
-/* Form Styling */
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-input[type="text"],
-input[type="email"],
-textarea {
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 40px; /* Space above the footer */
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding doesn't widen the element */
-    margin-bottom: 15px;
-}
-button[type="submit"] {
-    background-color: #28a745; /* Green submit button */
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-button[type="submit"]:hover {
-    background-color: #218838;
 }
