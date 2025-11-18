@@ -1,16 +1,29 @@
-/* Footer Styling */
-.site-footer {
-    background-color: #333; /* Dark background */
-    color: #f4f7f6; /* Light text */
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
-    margin-top: 40px; /* Space above the footer */
-    width: 100%;
+/* ---------------------------------- */
+/* 1. CORE BODY & HEADER STYLES */
+/* ---------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Light gray background */
+    color: #333;
 }
-/* Dynamic Navigation Styling */
+
+h1 {
+    background-color: #007bff; /* Professional blue header */
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+    text-align: center;
+    border-bottom: 5px solid #0056b3; 
+}
+
+/* ---------------------------------- */
+/* 2. NAVIGATION AND STICKY STYLES */
+/* ---------------------------------- */
 nav {
-    background-color: #333; /* Dark background for visibility */
+    background-color: #333; /* Dark background for navigation bar */
     text-align: center;
     padding: 10px 0;
     margin: 0 auto;
@@ -22,14 +35,67 @@ nav a {
     font-weight: bold;
 }
 nav a:hover {
-    color: #007bff; /* Hover color */
+    color: #007bff;
 }
-
-/* Sticky class added by JavaScript */
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensures it stays above other content */
+    z-index: 1000;
+}
+
+/* ---------------------------------- */
+/* 3. CONTENT AREA STYLES (Containers & Boxes) */
+/* ---------------------------------- */
+.container {
+    width: 90%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+/* Apply box styling to the elements inside the container */
+p, h2, form, ul, section {
+    margin: 20px 0; 
+    padding: 20px;
+    background-color: white; /* WHITE BOXES for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-position: inside; 
+}
+
+/* Form Specific Styling (Kept from before) */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+button[type="submit"] {
+    background-color: #28a745; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Footer Styling (Kept from before) */
+.site-footer {
+    background-color: #333;
+    color: #f4f7f6;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 40px;
+    width: 100%;
 }
