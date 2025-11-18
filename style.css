@@ -3,50 +3,53 @@
 /* ---------------------------------- */
 body {
     body {
-    font-family: 'Poppins', sans-serif; /* Applied new font */
+    font-family: 'Poppins', sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
+    background-color: #eef2f5; /* Lighter, cooler background */
     color: #333;
+    -webkit-font-smoothing: antialiased; /* Smoother fonts */
+    -moz-osx-font-smoothing: grayscale; 
 }
 }
 
-h1 {
-    background-color: #007bff; /* Professional blue header */
-    color: white;
-    padding: 20px;
-    margin-top: 0;
-    text-align: center;
-    border-bottom: 5px solid #0056b3; 
+body {
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f5; /* Lighter, cooler background */
+    color: #333;
+    -webkit-font-smoothing: antialiased; /* Smoother fonts */
+    -moz-osx-font-smoothing: grayscale; 
 }
-
 /* ---------------------------------- */
 /* 2. NAVIGATION AND STICKY STYLES */
 /* ---------------------------------- */
 nav {
-    background-color: #333; /* Dark background for navigation bar */
+    background-color: #4a5568; /* Modern dark gray */
     text-align: center;
-    padding: 10px 0;
+    padding: 12px 0; /* Increased padding */
     margin: 0 auto;
 }
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    padding: 0 15px;
-    font-weight: bold;
+    padding: 0 20px; 
+    font-weight: 500; /* Use medium weight Poppins font */
+    transition: color 0.3s ease;
 }
 nav a:hover {
-    color: #007bff;
+    color: #a0aec0; /* Soft hover effect */
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow when sticky */
     z-index: 1000;
 }
-
 /* ---------------------------------- */
 /* 3. CONTENT AREA STYLES (Containers & Boxes) */
 /* ---------------------------------- */
@@ -93,12 +96,12 @@ button[type="submit"]:hover {
 
 /* Footer Styling (Kept from before) */
 .site-footer {
-    background-color: #333;
-    color: #f4f7f6;
+    background-color: #4a5568; /* Match the navigation color */
+    color: #ffffff;
     text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
-    margin-top: 40px;
+    padding: 20px; /* More vertical space */
+    font-size: 0.85em;
+    margin-top: 50px; /* Increased space above the footer */
     width: 100%;
 }
 /* Card Styles for Features and Services */
