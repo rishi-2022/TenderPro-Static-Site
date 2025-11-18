@@ -2,170 +2,150 @@
 /* 1. CORE BODY & HEADER STYLES */
 /* ---------------------------------- */
 body {
-    body {
     font-family: 'Poppins', sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #eef2f5; /* Lighter, cooler background */
+    background-color: #f0f4f8; /* Very light, professional background */
     color: #333;
-    -webkit-font-smoothing: antialiased; /* Smoother fonts */
+    -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale; 
-}
 }
 
-body {
-    font-family: 'Poppins', sans-serif; 
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #eef2f5; /* Lighter, cooler background */
-    color: #333;
-    -webkit-font-smoothing: antialiased; /* Smoother fonts */
-    -moz-osx-font-smoothing: grayscale; 
+h1, h2, h3 {
+    color: #004c99; /* Deep, bold primary blue */
+    font-weight: 700; /* Bold headers */
 }
+
 /* ---------------------------------- */
 /* 2. NAVIGATION AND STICKY STYLES */
 /* ---------------------------------- */
 nav {
-    background-color: #4a5568; /* Modern dark gray */
+    background-color: #004c99; /* Navy blue navigation bar */
     text-align: center;
-    padding: 12px 0; /* Increased padding */
+    padding: 12px 0;
     margin: 0 auto;
+    font-size: 1.1em;
 }
 nav a {
     color: #ffffff;
     text-decoration: none;
     padding: 0 20px; 
-    font-weight: 500; /* Use medium weight Poppins font */
+    font-weight: 500; 
     transition: color 0.3s ease;
 }
 nav a:hover {
-    color: #a0aec0; /* Soft hover effect */
+    color: #ffaa00; /* Gold accent color on hover */
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow when sticky */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     z-index: 1000;
 }
+
 /* ---------------------------------- */
-/* 3. CONTENT AREA STYLES (Containers & Boxes) */
+/* 3. FULL-WIDTH HERO SECTION (HIGH IMPACT) */
+/* ---------------------------------- */
+.hero {
+    background-color: #004c99; /* Deep blue background for hero */
+    color: white;
+    padding: 80px 20px; /* Large padding for high impact */
+    text-align: center;
+    margin-bottom: 40px;
+}
+.hero h1 {
+    color: white; /* White text on blue background */
+    font-size: 3em; /* Very large font */
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.25em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------- */
+/* 4. CONTENT AREA STYLES */
 /* ---------------------------------- */
 .container {
     width: 90%; 
-    max-width: 1000px; 
+    max-width: 1200px; /* Wider container for more content space */
     margin: 0 auto; 
-    padding: 20px;
+    padding: 20px 0; /* Padding around content */
 }
 
-/* Apply box styling to the elements inside the container */
+/* Content Boxes */
 p, h2, form, ul, section {
-    margin: 20px 0; 
-    padding: 20px;
-    background-color: white; /* WHITE BOXES for content */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px 0; /* Increased margin for more whitespace */
+    padding: 30px;
+    background-color: white; 
+    border-radius: 12px; /* Slightly rounder corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08); /* Lighter, cleaner shadow */
     list-style-position: inside; 
 }
 
-/* Form Specific Styling (Kept from before) */
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-}
-button[type="submit"] {
-    background-color: #28a745; 
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-button[type="submit"]:hover {
-    background-color: #218838;
-}
-
-/* Footer Styling (Kept from before) */
-.site-footer {
-    background-color: #4a5568; /* Match the navigation color */
-    color: #ffffff;
-    text-align: center;
-    padding: 20px; /* More vertical space */
-    font-size: 0.85em;
-    margin-top: 50px; /* Increased space above the footer */
-    width: 100%;
-}
-/* Card Styles for Features and Services */
-/* Card Styles for Features and Services */
-
-/* 1. Grid Structure: Strict two-column layout */
+/* ---------------------------------- */
+/* 5. CARD AND ANIMATION STYLES */
+/* ---------------------------------- */
 .card-grid {
     display: grid;
-    /* Force 2 columns of equal size for a structured look */
     grid-template-columns: 1fr 1fr; 
-    gap: 30px; /* Increased gap for better separation */
+    gap: 40px; /* Increased gap */
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
-/* 2. Card Appearance: Smaller size, Stronger 3D shadow */
 .card {
     background-color: white;
-    padding: 20px; /* Slightly reduced padding for a smaller visual size */
+    padding: 30px; 
     border-radius: 12px;
-    /* 3D Effect Shadow: Uses multiple layered shadows for depth */
     box-shadow: 
-        0 5px 15px rgba(0, 0, 0, 0.1), /* Standard shadow */
-        0 10px 20px rgba(0, 0, 0, 0.05); /* Deeper shadow for 3D illusion */
+        0 5px 15px rgba(0, 0, 0, 0.1), 
+        0 10px 20px rgba(0, 0, 0, 0.05); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left; /* Switched to left alignment for readability */
-    height: auto; /* Ensures cards are column-based in size */
+    text-align: left; 
+    border-top: 5px solid #ffaa00; /* Gold accent line */
 }
 
-/* 3. Hover Effect: Increased lift and shadow for a stronger 3D interaction */
 .card:hover {
-    transform: translateY(-8px); /* Increased lift on hover */
-    /* Increased shadow on hover */
+    transform: translateY(-8px); 
     box-shadow: 
-        0 10px 25px rgba(0, 0, 0, 0.2), 
-        0 20px 40px rgba(0, 0, 0, 0.1); 
+        0 15px 30px rgba(0, 0, 0, 0.15), /* Stronger shadow on hover */
+        0 25px 50px rgba(0, 0, 0, 0.1); 
 }
 .card h3 {
-    color: #007bff;
-    font-size: 1.2em; /* Slightly smaller heading */
-    margin-top: 0;
-}.card:hover {
-    transform: translateY(-5px); /* Lift card on hover */
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    color: #004c99; 
+    font-size: 1.5em; 
+    margin-top: 10px;
 }
-.card h3 {
-    color: #007bff;
-    font-size: 1.5em;
-    margin-top: 0;
-}
-/* Initial state for Scroll Reveal animation (hidden/moved) */
-[data-animate] {
-    opacity: 0;
-    transform: translateY(20px); /* Move down 20px */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* Final state when JavaScript adds the 'visible' class */
-[data-animate].visible {
-    opacity: 1;
-    transform: translateY(0); /* Move back to original position */
-}
-/* Icon Styling */
 .card img {
-    width: 60px; /* Set a standard, professional size */
+    width: 60px;
     height: 60px;
     margin-bottom: 10px;
+}
+
+/* Scroll Reveal Animation Styles (Kept) */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+[data-animate].visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------------------------------- */
+/* 6. FOOTER STYLING */
+/* ---------------------------------- */
+.site-footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px; /* More space */
+    font-size: 0.9em;
+    margin-top: 50px;
+    width: 100%;
 }
