@@ -18,62 +18,101 @@
 
     <nav>
         <a href="index.html">Home</a> | 
-        <a href="about.html">About Us</a> |
-        <a href="services.html">Services</a>
+        <a href="services.html">Services</a> |
+        <a href="alerts.html">Tender Alerts</a> |
+        <a href="case-studies.html">Case Studies</a> |
+        <a href="contact.html">Contact</a>
+        <a href="#assessment" class="nav-button">Free Bid Assessment</a>
     </nav>
     
     <div class="container"> 
         
-        <h2>Why Choose TenderPro?</h2>
+        <h2 style="text-align: center; margin-top: 50px;">Why Businesses Choose Us</h2>
+        <p class="intro-text" style="text-align: center; max-width: 800px; margin: 20px auto 40px;">Stop losing opportunities due to technical rejections and compliance issues.</p>
+
         <div class="card-grid">
             
             <div class="card" data-animate="fade-in">
-                <img src="assets/icon-workflow.png" alt="Workflow Icon">
-                <h3>Streamlined Workflow</h3>
-                <p>Manage RFI, RFP, and tender bids all in one intuitive dashboard, accelerating your entire sourcing cycle.</p>
+                <img src="assets/icon-reject.png" alt="Rejection Icon">
+                <h3>Avoid Technical Rejection</h3>
+                <p>85% of first-time bidders face rejection due to missing documents or incorrect formats. We ensure 100% compliance.</p>
             </div>
             
             <div class="card" data-animate="fade-in">
-                <img src="assets/icon-scoring.png" alt="Scoring Icon">
-                <h3>Vendor Scoring</h3>
-                <p>Use transparent, automated scoring to select the best partners quickly based on objective performance data.</p>
+                <img src="assets/icon-complex.png" alt="Requirements Icon">
+                <h3>Meet Complex Requirements</h3>
+                <p>Navigate CPPP, GeM, and PSU portals with expert guidance on digital signatures, EMD, and bid securities.</p>
             </div>
             
             <div class="card" data-animate="fade-in">
-                <img src="assets/icon-audit.png" alt="Audit Icon">
-                <h3>Audit Trail</h3>
-                <p>Maintain a complete, immutable record of all communications and decisions for effortless compliance and review.</p>
-            </div>
-            
-            <div class="card" data-animate="fade-in">
-                <img src="assets/icon-time.png" alt="Time Icon">
-                <h3>Time Savings</h3>
-                <p>Reduce manual effort in document preparation and bid evaluation by up to 50% through powerful automation.</p>
+                <img src="assets/icon-hours.png" alt="Hours Icon">
+                <h3>Save Countless Hours</h3>
+                <p>Focus on your business while we handle the complex documentation and submission process for you.</p>
             </div>
             
         </div>
+        
+        <h2 style="text-align: center; margin-top: 50px;">Our Consulting Services</h2>
+        <p class="intro-text" style="text-align: center; max-width: 800px; margin: 20px auto 40px;">Choose the right level of support for your tender needs.</p>
+        
+        <div class="pricing-grid">
+            
+            <div class="pricing-card" data-animate="fade-in">
+                <h3>Tier 1: Document Review & Filing</h3>
+                <div class="price">₹15,000 - ₹25,000</div>
+                <div class="guarantee">Compliance Guarantee</div>
+                <ul>
+                    <li>Complete document organization and verification</li>
+                    <li>Eligibility cross-check against tender requirements</li>
+                    <li>Digital signature integration guidance</li>
+                    <li>Complete CPPP/GeM portal upload support</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
 
-        <h2>Request a Demo</h2>
-        <form action="https://formspree.io/f/xdkywayd" method="POST">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <div class="pricing-card recommended" data-animate="fade-in">
+                <div class="tag">RECOMMENDED</div>
+                <h3>Tier 2: Proposal Writing & Strategy</h3>
+                <div class="price">₹30,000 + 1% Success Fee</div>
+                <div class="guarantee">Maximized Win Probability</div>
+                <ul>
+                    <li>Everything in Tier 1</li>
+                    <li>Expert technical proposal drafting</li>
+                    <li>Financial bid structure review and optimization</li>
+                    <li>Pre-bid query management</li>
+                    <li>Post-submission follow-up support</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
 
-            <label for="email">Work Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+        </div>
 
-            <label for="message">What are you hoping to solve?</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <h2 style="text-align: center; margin-top: 70px;">See Our Success Stories</h2>
+        <p class="intro-text" style="text-align: center; max-width: 800px; margin: 20px auto 40px;">TRUSTED BY LEADING SMEs. Successfully Serving Clients Across Industries.</p>
+        
+        <div class="industry-grid">
+            <div class="industry-item" data-animate="fade-in">Civil Construction</div>
+            <div class="industry-item" data-animate="fade-in">IT Services</div>
+            <div class="industry-item" data-animate="fade-in">Manufacturing</div>
+            <div class="industry-item" data-animate="fade-in">Consulting</div>
+            <div class="industry-item" data-animate="fade-in">Supply Chain</div>
+            <div class="industry-item" data-animate="fade-in">Engineering</div>
+        </div>
 
-            <button type="submit">Schedule a Call</button>
-        </form>
+        <div id="assessment" class="assessment-form-box" data-animate="fade-in" style="margin-top: 70px; padding: 40px; background-color: #e6f7ff; border-radius: 12px; border: 1px solid #b3e0ff;">
+            <h2 style="color: #004c99; text-align: center;">Book Your FREE Bid Assessment</h2>
+            <p style="text-align: center;">We Prepare Winning Bids. Your Expert Partner for 100% Compliant EOI & Tender Submissions in India</p>
+            <form action="https://formspree.io/f/xdkywayd" method="POST" style="background-color: transparent; box-shadow: none;">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Work Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Tender Inquiry Details:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Book Assessment</button>
+            </form>
+        </div>
         
     </div>
 
-    <footer class="site-footer">
-        <p>&copy; 2025 TenderPro. All rights reserved. | Built with GitHub, Netlify, and Forms-pree.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    
-</body>
-</html>
+    <footer class="site
