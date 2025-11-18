@@ -102,21 +102,44 @@ button[type="submit"]:hover {
     width: 100%;
 }
 /* Card Styles for Features and Services */
+/* Card Styles for Features and Services */
+
+/* 1. Grid Structure: Strict two-column layout */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    /* Force 2 columns of equal size for a structured look */
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; /* Increased gap for better separation */
     margin-bottom: 40px;
 }
+
+/* 2. Card Appearance: Smaller size, Stronger 3D shadow */
 .card {
     background-color: white;
-    padding: 30px;
+    padding: 20px; /* Slightly reduced padding for a smaller visual size */
     border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* 3D Effect Shadow: Uses multiple layered shadows for depth */
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.1), /* Standard shadow */
+        0 10px 20px rgba(0, 0, 0, 0.05); /* Deeper shadow for 3D illusion */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+    text-align: left; /* Switched to left alignment for readability */
+    height: auto; /* Ensures cards are column-based in size */
 }
+
+/* 3. Hover Effect: Increased lift and shadow for a stronger 3D interaction */
 .card:hover {
+    transform: translateY(-8px); /* Increased lift on hover */
+    /* Increased shadow on hover */
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.2), 
+        0 20px 40px rgba(0, 0, 0, 0.1); 
+}
+.card h3 {
+    color: #007bff;
+    font-size: 1.2em; /* Slightly smaller heading */
+    margin-top: 0;
+}.card:hover {
     transform: translateY(-5px); /* Lift card on hover */
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
