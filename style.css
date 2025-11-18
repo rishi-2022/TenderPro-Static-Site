@@ -163,3 +163,9 @@ button[type="submit"]:hover {
     opacity: 1;
     transform: translateY(0); /* Move back to original position */
 }
+/* Icon Styling */
+.card img {
+    width: 60px; /* Set a standard, professional size */
+    height: 60px;
+    margin-bottom: 10px;
+}
